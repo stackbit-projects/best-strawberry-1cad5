@@ -1,0 +1,61 @@
+lang: en-US
+title: My Awesome Site
+email: null
+description: null
+baseurl: ''
+url: ''
+author:
+  name: null
+  twitter: null
+  picture: null
+twitter_username: null
+github_username: null
+logo: null
+search: null
+search_full_content: false
+search_provider: null
+algolia:
+  application_id: null
+  index_name: null
+  search_only_api_key: null
+  powered_by: null
+markdown: kramdown
+theme: jekyll-theme-basically-basic
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+feed:
+  path: atom.xml
+paginate: 10
+paginate_path: '/page:num/'
+exclude:
+  - .asset-cache
+  - .bundle
+  - .codeclimate.yml
+  - .editorconfig
+  - .gitattributes
+  - .jekyll-assets-cache
+  - .sass-cache
+  - .scss-lint.yml
+  - CHANGELOG
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - node_modules
+  - Rakefile
+  - README
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - /docs
+  - /example
+defaults:
+  - scope:
+      path: _posts
+      type: posts
+    values:
+      layout: post
+      read_time: true
